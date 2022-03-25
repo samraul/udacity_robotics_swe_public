@@ -1,7 +1,17 @@
 # Submission Projects
 
-* [Project 1: Gazebo World](./project1_gazeboWorld/)
+### [Project 1: Gazebo World](./project1_gazeboWorld/)
 
-<img src="./doc/p1_screenshot.png" width=300 style="border: 1px solid orange; margin-left: 50px;"/>
+<br>
+
+<img src="./doc/p1_screenshot.png" width=400 style="border: 1px solid orange; margin-left: 50px;"/>
+
+<br>
+
+### [Project 2: ROS Ball Chaser Bot](./project2_rosChaserBot/)
+
+<br>
+
+<img src="./project2_rosChaserBot/doc/gazebo.png" width=400 style="border: 1px solid orange; margin-left: 50px;"/>
 
 <br>
