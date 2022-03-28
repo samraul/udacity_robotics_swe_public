@@ -22,7 +22,7 @@ You should be able to see the world in gazebo, as well as rviz.
 
 <center><img src="doc/gazebo.png" width=720></center>
 
-Note that rviz displays the the robot's lidar information and the robot's camera image.
+Note that rviz displays the robot's lidar information and the robot's camera image.
 
 <center><img src="doc/rviz.png" width=640></center>
 
