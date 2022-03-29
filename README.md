@@ -12,8 +12,8 @@
 
 <br>
 
-### [Project 3: ROS Adaptive Monte Carlo Localization](./project2_rosChaserBot/)
+### [Project 3: ROS Adaptive Monte Carlo Localization](./project3_rosLocalization/)
 
-<img src="./project2_rosChaserBot/doc/gazebo.png" width=400 style="border: 1px solid orange; margin-left: 50px;"/>
+<img src="./project3_rosLocalization/doc/04_localization1.png" width=400 style="border: 1px solid orange; margin-left: 50px;"/>
 
 <br>
