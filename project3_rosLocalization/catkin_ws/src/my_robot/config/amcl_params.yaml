@@ -13,9 +13,8 @@ max_particles: 3000
 update_min_d: 0.25
 update_min_a: 0.5
 
-# alpha2 seems to have a big impact in this robot's localization
 odom_alpha1: 0.001
-odom_alpha2: 0.025
+odom_alpha2: 0.001
 odom_alpha3: 0.001
 odom_alpha4: 0.001
 

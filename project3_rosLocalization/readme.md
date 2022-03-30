@@ -97,7 +97,20 @@ Moving around:
 
 ---
 
-Localization at start, with wrong initial rotation estimation:
+Localization at start, with wrong initial rotation estimation. Note that for this project we provide a bad rotation estimate (90 degree offset), and instead provide a high initial rotation covariance, to allow AMCL to localize from the inaccurate estimate.
+
+From [amcl.launch](./catkin_ws/src/my_robot/launch/amcl.launch):
+```
+        <!-- For rotation, instead of providing an accurate estimate, we provide a wide
+            initial covariance. The robot actual pose has a 90deg (1.57rad) offset wrt,
+            so we initialize AMCL with a covariance that can cover that offset.
+
+            This would be an accurate rotation estimate:
+            <param name="initial_pose_a" value="-1.57"/> 
+        -->
+        <!-- Set covariance slightly larger than 1.57^2 -->
+        <param name="initial_cov_aa" value="2.5"/>
+```
 
 <p align="center"><img border=1 src="doc/03_rviz_localization.png"></p>
 
