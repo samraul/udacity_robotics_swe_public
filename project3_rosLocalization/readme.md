@@ -42,7 +42,7 @@ Note that since this project has been built in Ubuntu 20 with ROS-noetic, it req
 
 **If you have trouble compiling this package**, you can simply remove that folder, since the map is already generated in [the maps folder](./catkin_ws/src/my_robot/maps/).
 
-<center><img src="./catkin_ws/src/my_robot/maps/world_map.png" width=200 border=1></center>
+<p align="center"><img src="./catkin_ws/src/my_robot/maps/world_map.png" width=200 border=1></p>
 
 ### 2. Launch the world
 
@@ -53,11 +53,11 @@ catkin_ws $ roslaunch my_robot world.launch
 
 You should be able to see the world in gazebo, as well as rviz.
 
-<center><img src="doc/01_gazebo.png" width=480></center>
+<p align="center"><img src="doc/01_gazebo.png" width=480></p>
 
 Note that rviz displays the robot's lidar information and the robot's camera image.
 
-<center><img src="doc/02_rviz.png" width=480></center>
+<p align="center"><img src="doc/02_rviz.png" width=480></p>
 
 ### 3. Launch the nodes that provide localization to the robot
 
@@ -70,7 +70,7 @@ catkin_ws $ roslaunch my_robot amcl.launch
 
 Rviz should now display Monte Carlo's particles, along with the map.
 
-<center><img src="doc/03_rviz_localization.png" width=480></center>
+<p align="center"><img src="doc/03_rviz_localization.png" width=480></p>
 
 
 ### 4. Move the robot
@@ -93,35 +93,27 @@ Moving around:
 ...
 ```
 
-As the robot moves, the Monte Carlo particles will update in rviz and the robot will start to be properly localized in the map, which is made clear by the rotation of the map starting to align with the laser scan.
-
-<center><img src="doc/04_localization1.png" width=720></center>
-
 ## Screenshots
 
 ---
 
 Localization at start, with wrong initial rotation estimation:
 
-<center><img src="doc/03_rviz_localization.png" width=720></center>
+<p align="center"><img border=1 src="doc/03_rviz_localization.png"></p>
 
 ---
 
 Localization updates while moving:
 
-<center><img src="doc/04_localization1.png" width=720 border=1></center>
+<p align="center">
+   <img border=1 src="./doc/05_good_loc_01.gif">
+</p>
 
 ---
 
-Robot continues to localize when moving close to the wall:
+Example of localization:
 
-<center><img src="doc/05_localization2.png" width=720></center>
-
----
-
-Actual location of the robot close to the location predicted by AMCL:
-
-<center><img src="doc/06_localization2_gazebo.png" width=720></center>
+<p align="center"><img border=1 src="./doc/04_good_loc_final_frame.png"></p>
 
 
 ## Notes
@@ -130,7 +122,7 @@ Actual location of the robot close to the location predicted by AMCL:
 
 I made some changes with respect to [pgm_map_creator](https://github.com/hyfan1116/pgm_map_creator), which is implemented for `Ubuntu 16.04, ROS Kinetic, Boost 1.58`, so it compiles for `Ubuntu 20.04.4, ROS Noetic, Boost 1.71`. If you have trouble compiling this package, you can simply remove that folder, since the map is already generated in [the maps folder](./catkin_ws/src/my_robot/maps/).
 
-<center><img src="./catkin_ws/src/my_robot/maps/world_map.png" width=200 border=1></center>
+<p align="center"><img src="./catkin_ws/src/my_robot/maps/world_map.png" width=200 border=1></p>
 
 The changes are listed here:
 ```
