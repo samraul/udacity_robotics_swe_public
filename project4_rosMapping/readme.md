@@ -146,7 +146,12 @@ In that case, the robot will localize leveraging the existin map:
 
 Please note that editing maps is often needed in real scenarios. See [this Udacity knowledge base question](https://knowledge.udacity.com/questions/828996) for information.
 
-### Accessing the pre-built maps
+### Accessing the pre-built maps as direct downloads
+
+* [Download rtabmap_map01.db](https://github.com/samraul/udacity_robotics_swe_public/blob/main/project4_rosMapping/catkin_ws/src/my_robot/_databases/rtabmap_map01.db?raw=true): Map as generated in the test run, including its invalid loop closures.
+* [Download rtabmap_map01_corrected.db](https://github.com/samraul/udacity_robotics_swe_public/blob/main/project4_rosMapping/catkin_ws/src/my_robot/_databases/rtabmap_map01_corrected.db?raw=true): Resulting map once the invalid loop closures are rejected during manual edition.
+
+### Accessing the pre-built maps with git-lfs
 
 The pre-built maps can be foundd here [_databases](./catkin_ws/src/my_robot/_databases/):
 
