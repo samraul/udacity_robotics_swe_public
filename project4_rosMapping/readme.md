@@ -145,3 +145,56 @@ In that case, the robot will localize leveraging the existin map:
 ## Notes
 
 Please note that editing maps is often needed in real scenarios. See [this Udacity knowledge base question](https://knowledge.udacity.com/questions/828996) for information.
+
+### Accessing the pre-built maps
+
+The pre-built maps can be foundd here [_databases](./catkin_ws/src/my_robot/_databases/):
+
+* [rtabmap_map01.db](./catkin_ws/src/my_robot/_databases/rtabmap_map01.db): Is the map as generated in the test run, including its invalid loop closures.
+* [rtabmap_map01_corrected.db](./catkin_ws/src/my_robot/_databases/rtabmap_map01_corrected.db): Is the resulting map once the invalid loop closures are rejected during manual edition.
+
+In order to download these map when syncing the repository it is necessary to install [git-lfs](https://git-lfs.github.com/) *Git Large File Storage*, before cloning the repository.
+
+```
+$ sudo apt-get install git-lfs
+```
+
+Without *git-lfs* the files are simply text files with a hash. Note how their size is `134 bytes`:
+```
+ $ git clone git@github.com:samraul/udacity_robotics_swe_public.git
+Cloning into 'udacity_robotics_swe_public'...
+...
+Resolving deltas: 100% (56/56), done.
+
+ $ ls -las ./udacity_robotics_swe_public/project4_rosMapping/catkin_ws/src/my_robot/_databases/
+4 ****** samraul  134 Apr 10 00:45 rtabmap_map01_corrected.db
+4 ****** samraul  134 Apr 10 00:45 rtabmap_map01.db
+
+$ cat ./udacity_robotics_swe_public/project4_rosMapping/catkin_ws/src/my_robot/_databases/rtabmap_map01.db 
+version https://git-lfs.github.com/spec/v1
+oid sha256:e39ebe311dd4e21874fab0aa1557cd8223743816ed69711d84f430f070257a98
+size 130347008
+```
+
+Once *git-lfs* is installed, the files are properly expanded to their actual size of `130MB` when the repository is cloned:
+
+```
+$ sudo apt-get install git-lfs
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following NEW packages will be installed:
+  git-lfs
+...
+
+$ git clone git@github.com:samraul/udacity_robotics_swe_public.git
+Cloning into 'udacity_robotics_swe_public'...
+...
+Filtering content: 100% (2/2), 248.63 MiB | 60.89 MiB/s, done.
+
+$ ls -las ./udacity_robotics_swe_public/project4_rosMapping/catkin_ws/src/my_robot/_databases/
+total 254600
+127300 ****** samraul 130355200 Apr 10 00:48 rtabmap_map01_corrected.db
+127292 ****** samraul 130347008 Apr 10 00:48 rtabmap_map01.db
+
+```
