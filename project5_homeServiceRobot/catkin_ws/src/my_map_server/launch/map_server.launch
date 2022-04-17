@@ -1,0 +1,5 @@
+
+<launch>
+    <arg name="map_file" default="$(find my_map_server)/map/turtlebot3_world_map.yaml" />
+    <node pkg="map_server" type="map_server" name="map_server" args="$(arg map_file)" />
+</launch>

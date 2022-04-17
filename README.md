@@ -24,3 +24,9 @@
 <img src="./project4_rosMapping/doc/05_final_result.png" width=400 style="border: 1px solid orange; margin-left: 50px;"/>
 
 <br>
+
+## [Project 5: ROS Home Service Robot](./project5_homeServiceRobot/)
+
+<img src="./project5_homeServiceRobot/doc/final_animation_with_pause_80.gif" width=400 style="border: 1px solid orange; margin-left: 50px;"/>
+
+<br>
