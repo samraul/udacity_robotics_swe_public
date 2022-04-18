@@ -64,10 +64,11 @@ $ cd catkin_ws
 catkin_ws $ catkin_make
 ```
 
-This command will build the dependencies along with 3 new targets:
-* **libmy_pick_objects**: library with goal definition code that *my_add_markers* depends on.
+This command will build the dependencies along with 4 new targets:
+* **libmy_pick_objects**: library with goal definition code that *my_add_markers* and *my_add_markers_timed* depend on.
 * **my_pick_objects_node**: executable that moves the robot to the pick up and drop off locations.
-* **my_add_markers**: executable that shows marker at pick up and drop off locations.
+* **my_add_markers**: executable that shows marker at pick up and drop off locations during robot navigation, when the robot reaches the locations.
+* **my_add_markers_timed**: executable that shows marker at pick up and drop off locations with timers (no robot navigation required).
 
 
 ### 2. Use the provided scripts to see different stages of the project

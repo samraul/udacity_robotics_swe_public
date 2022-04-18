@@ -1,12 +1,6 @@
 #include <ros/ros.h>
 #include "my_pick_objects/goal_definitions.h"
 
-// Additional libraries for ctrl+c exit support
-#include <unistd.h>
-#include <iostream>
-#include <cstdlib>
-#include <signal.h>
-
 using namespace my_pick_objects;
 
 /**

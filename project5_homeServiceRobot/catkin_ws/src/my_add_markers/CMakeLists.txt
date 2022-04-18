@@ -207,3 +207,6 @@ include_directories(
 
 add_executable(my_add_markers src/my_add_markers.cpp)
 target_link_libraries(my_add_markers ${catkin_LIBRARIES})
+
+add_executable(my_add_markers_timed src/my_add_markers_timed.cpp)
+target_link_libraries(my_add_markers_timed ${catkin_LIBRARIES})
